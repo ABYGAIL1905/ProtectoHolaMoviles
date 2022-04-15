@@ -29,9 +29,9 @@ public class ActividadDetallePlato extends AppCompatActivity {
 
     public void iniciarActividad(){
         producto= (Producto) getIntent().getExtras().getSerializable("itemDetalle");//mismo nombre que el adapter
-        imagenVer.setImageResource(producto.getFoto_producto());/// FOTO EN  TIPO INT PASAR A STRING
-        txtnombre.setText(producto.getNombre_producto());
-        txtdescripcion.setText(producto.getDescripcion_producto());
+        imagenVer.setImageResource(producto.getFoto());/// FOTO EN  TIPO INT PASAR A STRING
+        txtnombre.setText(producto.getNombre());
+        txtdescripcion.setText(producto.getDescripcion());
 
 
 

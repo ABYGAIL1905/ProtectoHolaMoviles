@@ -42,6 +42,8 @@ public class RecyclerAdaptadorPlatos extends RecyclerView.Adapter<RecyclerAdapta
 
         this.listaproducto = listaproducto;
         this.intemClick=intemClick;
+
+
         //System.out.println(listaproducto.size()+"Productos Mostrando");
        // this.listPlatos=listPlatos;
        // this.originallistaproducto = new ArrayList<>();
@@ -76,8 +78,8 @@ public class RecyclerAdaptadorPlatos extends RecyclerView.Adapter<RecyclerAdapta
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView")int position) {
         final Producto item=listaproducto.get(position);
-        holder.txtnombreplato.setText(item.getNombre_producto());
-        System.out.println(listaproducto.get(position).getNombre_producto()+"NOMBRESSSSSSSSSSSSSSSSS");
+        holder.txtnombreplato.setText(item.getNombre());
+        System.out.println(listaproducto.get(position).getNombre()+"  NOMBRESSSSSSSSSSSSSSSSS");
        // holder.fotoplato.setImageResource(item.getFoto_producto());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

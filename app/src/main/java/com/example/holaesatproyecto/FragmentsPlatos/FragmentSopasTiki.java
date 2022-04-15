@@ -92,10 +92,6 @@ public class FragmentSopasTiki extends Fragment implements RecyclerAdaptadorPlat
         // Inflate the layout for this fragment
         View vista=inflater.inflate(R.layout.fragment_entradas_tiki, container, false);
 
-
-
-
-
         recyclerView=vista.findViewById(R.id.RecyclerIdPlato);
 
         getItemsSQL();
@@ -121,7 +117,7 @@ public class FragmentSopasTiki extends Fragment implements RecyclerAdaptadorPlat
             public void onResponse(Call<List<Producto>> call, Response<List<Producto>> response) {
                 List<Producto> post = response.body();
                 for (Producto producto : post) {
-                    producto.setNombre_producto(producto.getNombre_producto());
+                    producto.setNombre(producto.getNombre());
                     listaproducto.add(producto);
                 }
                 System.out.println(listaproducto.size()+ " iiiiiiiiiiiiiiiiiiiiiddddddd");

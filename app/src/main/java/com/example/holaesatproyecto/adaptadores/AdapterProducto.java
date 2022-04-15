@@ -42,8 +42,8 @@ public class AdapterProducto extends ArrayAdapter<Producto> {
        // fotoplato=(ImageView)roview.findViewById(R.id.opcionimagenPlato1);
         txtnombreplato=(TextView)roview.findViewById(R.id.menunombre_plato1);
 
-        fotoplato.setImageResource(listaproducto.get(position).getFoto_producto());
-        txtnombreplato.setText(listaproducto.get(position).getNombre_producto());
+        fotoplato.setImageResource(listaproducto.get(position).getFoto());
+        txtnombreplato.setText(listaproducto.get(position).getNombre());
         return  roview;
 
 

@@ -102,7 +102,7 @@ public class FragmentTikiFuertes extends Fragment implements RecyclerAdaptadorPl
             public void onResponse(Call<List<Producto>> call, Response<List<Producto>> response) {
                 List<Producto> post = response.body();
                 for (Producto producto : post) {
-                    producto.setNombre_producto(producto.getNombre_producto());
+                    producto.setNombre(producto.getNombre());
                     listaproducto.add(producto);
                 }
                 System.out.println(listaproducto.size()+ " iiiiiiiiiiiiiiiiiiiiiddddddd");
